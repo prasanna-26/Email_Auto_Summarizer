@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Email Summarizer Settings</title>
+  <style>
+    body {
+      max-width: 520px;
+      margin: 40px auto;
+      padding: 24px;
+      font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    label {
+      display: block;
+      margin: 16px 0 6px;
+      font-weight: 500;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #dadce0;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+    button {
+      margin-top: 16px;
+      padding: 10px 20px;
+      background: #d97757;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .help {
+      font-size: 13px;
+      color: #5f6368;
+      margin-top: 6px;
+    }
+    .saved {
+      color: #137333;
+      margin-left: 12px;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Email Summarizer Settings</h1>
+  <label for="apiKey">Anthropic API Key</label>
+  <input type="password" id="apiKey" placeholder="sk-ant-...">
+  <div class="help">Get one at <a href="https://console.anthropic.com" target="_blank">console.anthropic.com</a> &rarr; Settings &rarr; API Keys</div>
+  <button id="saveBtn">Save</button>
+  <span id="savedMsg" class="saved" style="display:none;">Saved &check;</span>
+  <script src="options.js"></script>
+</body>
+</html>
