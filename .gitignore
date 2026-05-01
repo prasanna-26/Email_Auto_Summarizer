@@ -1,0 +1,32 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE / editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+
+# Local secrets (the extension stores keys in Chrome storage, but never commit any
+# accidental local config files containing real keys)
+.env
+.env.local
+secrets.json
+config.local.json
+
+# Build artifacts (none expected, but in case anyone forks and adds tooling)
+dist/
+build/
+node_modules/
+
+# Packaged extension files
+*.zip
+*.crx
+*.pem
